@@ -1,14 +1,19 @@
+<!DOCTYPE html>
 <html>
 	<head>
 		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i" rel="stylesheet">
-		<link rel="stylesheet" type = "text/css" href = "style.css">
-		<link 
-			rel="stylesheet"
-		 	type="text/css"
-		 	media="screen"
-		/>
-		<script type="text/javascript" src="javascripts/prism.js"></script>
-		<script type="text/javascript" src="javascripts/prism.ruby.js"></script>
+		<link rel="stylesheet" type = "text/css" href = "css/style.css">
+    <link href="css/prism.css" rel="stylesheet" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="javascripts/prism.js"></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script>
+      ScrollReveal({
+        scale: 0.85,
+        delay: 375,
+        duration: 1000
+      });
+    </script>
 
 		<title>Adrian Chung</title>
 		<meta name="description" content="Adrian Chung is a professional
@@ -46,7 +51,6 @@
 		
 		<hr class="yellow">
 		<br class="clear"/>
-
 		<div class="box">
 <pre><code class="language-ruby">
 print &quot;Enter a number: &quot;
@@ -76,7 +80,7 @@ puts &quot;That's the #{number}#{ordinal} item!&quot;</code></pre>
 
 		<br class="clear"/>
 
-		<div class="box">
+    <div class="box">
 		 	<h4>Foobar</h4>
 			<p>
 			  This ruby program is an adaptation of a classic technical
@@ -167,103 +171,105 @@ end</code></pre>
 
 		<div class="box">
     	<h4>Quote Generator</h4>
-    		<img src="images/splurty.png" class="full-width" />
-     		<p>
-         	A database-powered quote generator with a mobile-first
-         	design, using the Ruby on Rails framework, HTML, and CSS.
-         	Uses Git and GitHub for version control, and launched
-         	on Heroku.
-          <a href="https://splurty-adrian-chung.herokuapp.com" target="_blank">Website</a>
-          <a href="https://github.com/adrianschung/Splurty" target="_blank">GitHub</a>
-     	 	</p>
-    	</div>
-    	<div class="box">
-      	<h4>Yelp Clone</h4>
-      	<img src="images/skatester.png" class="full-width" />
-      	<p>
-	       	A Yelp clone that integrates with the Google Maps API
-	       	and includes features like user comments, star ratings,
-	       	image uploading, and user authentication.
-          <a href="https://skatester-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-          <a href="https://github.com/adrianschung/skatester" target="_blank">GitHub</a>
-	      </p>
-    	</div>
-    	<br class="clear" />
-
-    	<div class="box">
-      		<h4>Two-Sided Market Place</h4>
-     		<img src="images/flixter.png" class="full-width" />
-      		<p>
-        		A two-sided, video-streaming marketplace platform that
-        		features credit card payment capabilities, user role
-        		management, complex user interfaces, and advanced
-        		database relationships.
-            <a href="https://flixter-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-            <a href="https://github.com/adrianschung/flixter" target="_blank">GitHub</a>
-      		</p>
-    	</div>
-    	<div class="box">
-      	<h4>Test Driven Development</h4>
-      	<img src="images/grammable.png" class="full-width" />
-      	<p>
-        	An Instagram clone that was built using industry-standard, test-driven
-        	development following numerous red/green/refactor cycles.
-          <a href="https://grammable-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-          <a href="https://github.com/adrianschung/grammable" target="_blank">GitHub</a>
-      	</p>
-    	</div>
-    	<br class="clear" />
-    	<div class="box">
-      	<h4>Single Page Todo Application</h4>
-      	<img src="images/todoster.png" class="full-width" />
-      	<p>
-        	This single-page to-do application features a
-        	fluid user interface that by using JavaScript
-        	allows users to rapidly add dynamic content.
-          <a href="https://todoster-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-          <a href="https://github.com/adrianschung/todo" target="_blank">GitHub</a>
-      	</p>
-    	</div>
-    	<div class="box">
-      	<h4>Agile Team Project(Work In Progress)</h4>
-      	<img src="images/chess.png" class="full-width" />
-      	<p>
-        	Worked on an Agile software development team building
-        	a chess application. Under the guidance of a senior software engineer,
-        	we had weekly Agile team meetings for code reviews, sprint planning,
-        	and feature assignments.
-          <a href="https://chess-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-          <a href="https://github.com/chess-senders/chess" target="_blank">GitHub</a>
-      	</p>
-    	</div>
-    	<br class="clear" />
-    	
-    	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
-    	<hr class="yellow" />
-    	<p class="skills-and-tools">
+    	<img src="images/splurty.png" class="full-width" />
     	<p>
-    		Adrian has developed proficiency and expertise in the following programming languages and comfort with the following tools.
-    	</p>
-    	<div class ="icons">
-	    	<img src="images/rubocop.png" class="icon"/>
-		    <img src="images/trello.png" class="icon"/>
-		    <img src="images/slack.png" class="icon"/>
-		    <img src="images/codeship.png" class="icon"/>
-		    <br class="clear" class="icon"/>
-	    	<img src="images/skills.png" class="icon"/>
-	    </div>
-
-	    <div class="contact-me" id="hire-me">
-	    	<h3 class="contact-headline">Contact</h3>
-	    	<hr class="yellow" />
-	    	<p class="contact-info">
-        	Currently entertaining new opportunities.
-        	Please get in touch via email:
-      	</p>
-      	<p>
-          <a href="mailto:adrianschung@gmail.com" class="contact-link">adrianschung@gmail.com</a>
+       	A database-powered quote generator with a mobile-first
+       	design, using the Ruby on Rails framework, HTML, and CSS.
+       	Uses Git and GitHub for version control, and launched
+       	on Heroku.
+        <a href="https://splurty-adrian-chung.herokuapp.com" target="_blank">Website</a>
+        <a href="https://github.com/adrianschung/Splurty" target="_blank">GitHub</a>
+     	</p>
+    </div>
+    <div class="box">
+   	<h4>Yelp Clone</h4>
+    	<img src="images/skatester.png" class="full-width" />
+    	<p>
+       	A Yelp clone that integrates with the Google Maps API
+       	and includes features like user comments, star ratings,
+       	image uploading, and user authentication.
+        <a href="https://skatester-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+        <a href="https://github.com/adrianschung/skatester" target="_blank">GitHub</a>
       </p>
-    	</div>
-	</body>
+  	</div>
+  	<br class="clear" />
 
+  	<div class="box">
+      <h4>Two-Sided Market Place</h4>
+   		<img src="images/flixter.png" class="full-width" />
+    	<p>
+        A two-sided, video-streaming marketplace platform that
+      	features credit card payment capabilities, user role
+      	management, complex user interfaces, and advanced
+      	database relationships.
+        <a href="https://flixter-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+        <a href="https://github.com/adrianschung/flixter" target="_blank">GitHub</a>
+    	</p>
+  	</div>
+  	<div class="box">
+    	<h4>Test Driven Development</h4>
+    	<img src="images/grammable.png" class="full-width" />
+    	<p>
+      	An Instagram clone that was built using industry-standard, test-driven
+      	development following numerous red/green/refactor cycles.
+        <a href="https://grammable-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+        <a href="https://github.com/adrianschung/grammable" target="_blank">GitHub</a>
+    	</p>
+  	</div>
+  	<br class="clear" />
+  	<div class="box">
+    	<h4>Single Page Todo Application</h4>
+    	<img src="images/todoster.png" class="full-width" />
+    	<p>
+      	This single-page to-do application features a
+      	fluid user interface that by using JavaScript
+      	allows users to rapidly add dynamic content.
+        <a href="https://todoster-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+        <a href="https://github.com/adrianschung/todo" target="_blank">GitHub</a>
+    	</p>
+  	</div>
+  	<div class="box">
+    	<h4>Agile Team Project(Work In Progress)</h4>
+    	<img src="images/chess.png" class="full-width" />
+    	<p>
+      	Worked on an Agile software development team building
+      	a chess application. Under the guidance of a senior software engineer,
+      	we had weekly Agile team meetings for code reviews, sprint planning,
+      	and feature assignments.
+        <a href="https://chess-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+        <a href="https://github.com/chess-senders/chess" target="_blank">GitHub</a>
+    	</p>
+  	</div>
+  	<br class="clear" />
+  	
+  	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+  	<hr class="yellow" />
+  	<p class="skills-and-tools" />
+  	<p>
+  		Adrian has developed proficiency and expertise in the following programming languages and comfort with the following tools.
+  	</p>
+  	<div class ="icons">
+    	<img src="images/rubocop.png" class="icon"/>
+	    <img src="images/trello.png" class="icon"/>
+	    <img src="images/slack.png" class="icon"/>
+	    <img src="images/codeship.png" class="icon"/>
+	    <br class="clear" class="icon"/>
+    	<img src="images/skills.png" class="icon"/>
+    </div>
+
+    <div class="contact-me" id="hire-me">
+    	<h3 class="contact-headline">Contact</h3>
+    	<hr class="yellow" />
+    	<p class="contact-info">
+      	Currently entertaining new opportunities.
+      	Please get in touch via email:
+    	</p>
+    	<p>
+        <a href="mailto:adrianschung@gmail.com" class="contact-link">adrianschung@gmail.com</a>
+      </p>
+  	</div>
+    <script>
+      ScrollReveal().reveal('.box')
+    </script>
+	</body>
 </html>
