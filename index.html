@@ -1,0 +1,269 @@
+<html>
+	<head>
+		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i" rel="stylesheet">
+		<link rel="stylesheet" type = "text/css" href = "style.css">
+		<link 
+			rel="stylesheet"
+		 	type="text/css"
+		 	media="screen"
+		/>
+		<script type="text/javascript" src="prism.js"></script>
+		<script type="text/javascript" src="prism.ruby.js"></script>
+
+		<title>Adrian Chung</title>
+		<meta name="description" content="Adrian Chung is a professional
+        	software engineer specializing in full-stack development.
+       		He has extensive experience with Ruby, Rails, JavaScript,
+        	and building web applications.">
+	</head>
+
+	<body>
+		<div class="about-container">
+			<ul>
+			  <li><a href="#" class="nav-link">About</a></li>
+			  <li><a href="#code-samples" class="nav-link">Code Samples</a></li>
+			  <li><a href="#web-apps" class="nav-link">Web Apps</a></li>
+			  <li><a href="#skills-and-tools" class="nav-link">Skills &amp; Tools</a></li>
+			  <li class="hire-me"><a href="#hire-me" class="nav-link">HIRE ME</a></li>
+			</ul>
+
+			<div class="about">
+				<img src="me.jpg" class="me" />
+
+				<h1>Adrian Chung</h1>
+				
+				<h2>Web Developer</h2>
+				
+				<hr class="grey"/>
+				
+				<p class="bio">
+					I am a full stack web developer with experience primarily in Ruby on Rails and Javascript. As a Science graduate, learning the hows and whys of life brings me great joy. After coming across programming, I've opened a door to a whole new world in which I can not only learn but produce my own logic. Solving problems and being able to understand all the inner-workings brings me the greatest source of gratification. Currently, I am looking for a position where I can face greater challenges that will help me grow and become a better developer.
+				</p>
+			</div>
+		</div>
+		
+		<h3 id="code-samples">Code Snippets</h3>
+		
+		<hr class="yellow">
+		<br class="clear"/>
+
+		<div class="box">
+<pre><code class="language-ruby">
+print &quot;Enter a number: &quot;
+number = gets.chomp.to_i
+lop_number = number % 10
+if lop_number == 1 &amp;&amp; number != 11
+  ordinal = &quot;st&quot;
+elsif lop_number == 2 &amp;&amp; number != 12
+  ordinal = &quot;nd&quot;
+elsif lop_number == 3 &amp;&amp; number != 13
+  ordinal = &quot;rd&quot;
+else
+  ordinal = &quot;th&quot;
+end
+puts &quot;That's the #{number}#{ordinal} item!&quot;</code></pre>
+		</div>
+
+		<div class="box">
+			<h4>Ordinal Challenge</h4>
+			<p>
+				This ruby program will convert a plain number
+				to the ordinal of the number. So for example,
+				if the user enters 2, it will display 2nd, if
+				the user enters 3, it will display 3rd, etc.
+			</p>
+		</div>
+
+		<br class="clear"/>
+
+		<div class="box">
+		 	<h4>Foobar</h4>
+			<p>
+			  This ruby program is an adaptation of a classic technical
+			  interview problem which displays sequences
+			  of the Foobar pattern.
+			</p>
+		</div>
+
+		<div class="box">
+<pre><code class="language-ruby">
+print &quot;How many items do you want to see? &quot;
+items = gets.chomp.to_i
+array = []
+items.times do |n|
+  array &lt;&lt; n + 1
+end
+def foobar(number)
+  if number % 3 == 0 &amp;&amp; number % 5 == 0
+    puts &quot;FooBar&quot;
+  elsif number % 5 == 0
+    puts &quot;Bar&quot;
+  elsif number % 3 == 0
+    puts &quot;Foo&quot;
+  else
+    puts number
+  end 
+end
+array.each do |number|
+  foobar(number)
+end</code></pre>
+		</div>
+
+    <div class="box">
+      <pre><code class="language-ruby">
+class Node
+  attr_accessor :value
+  attr_accessor :l, :r
+
+  def initialize(value, l=nil, r=nil)
+    @value = value
+  end
+
+  def insert(node, value)
+    if node.value > value
+      node.l ? insert(node.l, value) : node.l = Node.new(value)
+    elsif node.value < value
+      node.r ? insert(node.r, value) : node.r = Node.new(value)
+    end
+  end
+end
+
+module BTreeSort
+  @sorted_array = []
+
+  def self.sort(array)
+    binary_tree = build_tree(array)
+    flatten_tree(binary_tree)
+    @sorted_array
+  end
+
+  def self.build_tree(array)
+    tree = Node.new(array[0])
+    rest = array.last(array.length-1)
+    rest.each {|num|tree.insert(tree, num)}
+    tree
+  end
+
+  def self.flatten_tree(tree)
+    flatten_tree(tree.l) if tree.l
+    @sorted_array.push(tree.value)
+    flatten_tree(tree.r) if tree.r
+  end
+end</code></pre>
+    </div>
+    <div class="box">
+      <h4>Binary Tree Sort</h4>
+      <p>
+        This ruby program will take an array of numbers as an argument for BTreeSort. Each element 
+        is sorted by insertion into the tree and then re-organized into a new array through a 
+        "flattening" of the tree.
+      </p>
+    </div>
+
+		<br class="clear"/>
+
+		<h3 id="web-apps">Web Apps</h3>
+		<hr class="yellow" />
+
+		<div class="box">
+    	<h4>Quote Generator</h4>
+    		<img src="splurty.png" class="full-width" />
+     		<p>
+         	A database-powered quote generator with a mobile-first
+         	design, using the Ruby on Rails framework, HTML, and CSS.
+         	Uses Git and GitHub for version control, and launched
+         	on Heroku.
+          <a href="https://splurty-adrian-chung.herokuapp.com" target="_blank">Website</a>
+          <a href="https://github.com/adrianschung/Splurty" target="_blank">GitHub</a>
+     	 	</p>
+    	</div>
+    	<div class="box">
+      	<h4>Yelp Clone</h4>
+      	<img src="skatester.png" class="full-width" />
+      	<p>
+	       	A Yelp clone that integrates with the Google Maps API
+	       	and includes features like user comments, star ratings,
+	       	image uploading, and user authentication.
+          <a href="https://skatester-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+          <a href="https://github.com/adrianschung/skatester" target="_blank">GitHub</a>
+	      </p>
+    	</div>
+    	<br class="clear" />
+
+    	<div class="box">
+      		<h4>Two-Sided Market Place</h4>
+     		<img src="flixter.png" class="full-width" />
+      		<p>
+        		A two-sided, video-streaming marketplace platform that
+        		features credit card payment capabilities, user role
+        		management, complex user interfaces, and advanced
+        		database relationships.
+            <a href="https://flixter-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+            <a href="https://github.com/adrianschung/flixter" target="_blank">GitHub</a>
+      		</p>
+    	</div>
+    	<div class="box">
+      	<h4>Test Driven Development</h4>
+      	<img src="grammable.png" class="full-width" />
+      	<p>
+        	An Instagram clone that was built using industry-standard, test-driven
+        	development following numerous red/green/refactor cycles.
+          <a href="https://grammable-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+          <a href="https://github.com/adrianschung/grammable" target="_blank">GitHub</a>
+      	</p>
+    	</div>
+    	<br class="clear" />
+    	<div class="box">
+      	<h4>Single Page Todo Application</h4>
+      	<img src="todoster.png" class="full-width" />
+      	<p>
+        	This single-page to-do application features a
+        	fluid user interface that by using JavaScript
+        	allows users to rapidly add dynamic content.
+          <a href="https://todoster-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+          <a href="https://github.com/adrianschung/todo" target="_blank">GitHub</a>
+      	</p>
+    	</div>
+    	<div class="box">
+      	<h4>Agile Team Project(Work In Progress)</h4>
+      	<img src="chess.png" class="full-width" />
+      	<p>
+        	Worked on an Agile software development team building
+        	a chess application. Under the guidance of a senior software engineer,
+        	we had weekly Agile team meetings for code reviews, sprint planning,
+        	and feature assignments.
+          <a href="https://chess-adrian-chung.herokuapp.com/" target="_blank">Website</a>
+          <a href="https://github.com/chess-senders/chess" target="_blank">GitHub</a>
+      	</p>
+    	</div>
+    	<br class="clear" />
+    	
+    	<h3 id="skills-and-tools">Skills &amp; Tools</h3>
+    	<hr class="yellow" />
+    	<p class="skills-and-tools">
+    	<p>
+    		Adrian has developed proficiency and expertise in the following programming languages and comfort with the following tools.
+    	</p>
+    	<div class ="icons">
+	    	<img src="rubocop.png" class="icon"/>
+		    <img src="trello.png" class="icon"/>
+		    <img src="slack.png" class="icon"/>
+		    <img src="codeship.png" class="icon"/>
+		    <br class="clear" class="icon"/>
+	    	<img src="skills.png" class="icon"/>
+	    </div>
+
+	    <div class="contact-me" id="hire-me">
+	    	<h3 class="contact-headline">Contact</h3>
+	    	<hr class="yellow" />
+	    	<p class="contact-info">
+        	Currently entertaining new opportunities.
+        	Please get in touch via email:
+      	</p>
+      	<p>
+          <a href="mailto:adrianschung@gmail.com" class="contact-link">adrianschung@gmail.com</a>
+      </p>
+    	</div>
+	</body>
+
+</html>
