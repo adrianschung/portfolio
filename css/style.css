@@ -4,16 +4,45 @@ body {
 	height: 100%;
 }
 
+p {
+	text-align: center;
+}
+
 h1 {
 	color: #f7bd8a;
 	font-size: 3.125rem;
 	font-weight: normal;
 	margin-bottom: 0;
 }
+
 h2 {
 	color: white;
 	font-size: 1.125rem;
 	margin-top: 0;
+}
+
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 4rem;
+}
+
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 1rem;
+	padding-top: 1rem;
+	padding-bottom: 1rem;
+	text-align: center;
+	margin-left: 1rem;
 }
 
 .bio {
@@ -52,13 +81,6 @@ h2 {
 	padding-bottom: 1.5rem;
 }
 
-h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
 .yellow {
 	border-top: 3px double #f5a623;
 	width: 250px;
@@ -76,15 +98,6 @@ h3 {
 
 .clear {
 	clear: both;
-}
-
-h4 {
-	text-align: center;
-	font-size: 24px;
-}
-
-p {
-	text-align: center;
 }
 
 .full-width {
@@ -129,18 +142,6 @@ p {
 .nav-link {
 	color: white;
 	text-decoration: none;
-}
-
-li {
-	display: inline-block;
-	font-size: 12px;
-	width: 100px;
-	font-weight: bold;
-	margin-top: 1rem;
-	padding-top: 1rem;
-	padding-bottom: 1rem;
-	text-align: center;
-	margin-left: 1rem;
 }
 
 .hire-me {
