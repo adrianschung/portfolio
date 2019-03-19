@@ -54,15 +54,15 @@ a:hover .left,
 a:hover .top,
 a:hover .bottom,
 a:hover .right {
-	border: 0.5em solid #e74c3c;
+	border: 0.5em solid #f5a623;
 }
 
 a:hover .left:after,
 a:hover .top:after,
 a:hover .bottom:after,
 a:hover .right:after {
-	border-top: 0.5em solid #e74c3c;
-	border-right: 0.5em solid #e74c3c;
+	border-top: 0.5em solid #f5a623;
+	border-right: 0.5em solid #f5a623;
 }
 
 .bio {
@@ -185,7 +185,7 @@ a:hover .right:after {
 	display: inline-block;
 	width: 4em;
 	height: 4em;
-	border: 0.5em solid #333;
+	border: 0.5em solid #f5a623;
 	border-radius: 50%;
 	background-color: #ffffff;
 }
