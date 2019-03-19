@@ -28,9 +28,6 @@ $('#top').click(function() {
   return false;
 });
 
-//Hide button up on load
-$('#top').hide();
-
 //Fade button to return to top depending on scroll location
 $(window).scroll(function() {
   const duration = 500;
