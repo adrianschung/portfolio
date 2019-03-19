@@ -18,3 +18,8 @@ for (var i = 0; i < buttons.length; i++) {
     );
   });
 }
+
+$('#top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
+  return false;
+});
