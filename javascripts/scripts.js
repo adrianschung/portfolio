@@ -1,3 +1,4 @@
+//Reveal objects upon scrolling
 ScrollReveal({
   scale: 0.85,
   delay: 375,
@@ -5,6 +6,7 @@ ScrollReveal({
 });
 ScrollReveal().reveal('.box');
 
+//Smooth scrolling for buttons to elements
 var buttons = ['about', 'code', 'apps', 'skills', 'hire'];
 for (var i = 0; i < buttons.length; i++) {
   let btn = `#${buttons[i]}-btn`;
@@ -19,6 +21,7 @@ for (var i = 0; i < buttons.length; i++) {
   });
 }
 
+//Smooth scrolling for button to return to top
 $('#top').click(function() {
   $('html, body').animate({ scrollTop: 0 }, 'slow');
   return false;
