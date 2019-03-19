@@ -48,44 +48,6 @@
 		<br class="clear"/>
 		<div class="box">
 <pre><code class="language-ruby">
-print &quot;Enter a number: &quot;
-number = gets.chomp.to_i
-lop_number = number % 10
-if lop_number == 1 &amp;&amp; number != 11
-  ordinal = &quot;st&quot;
-elsif lop_number == 2 &amp;&amp; number != 12
-  ordinal = &quot;nd&quot;
-elsif lop_number == 3 &amp;&amp; number != 13
-  ordinal = &quot;rd&quot;
-else
-  ordinal = &quot;th&quot;
-end
-puts &quot;That's the #{number}#{ordinal} item!&quot;</code></pre>
-		</div>
-
-		<div class="box">
-			<h4>Ordinal Challenge</h4>
-			<p>
-				This ruby program will convert a plain number
-				to the ordinal of the number. So for example,
-				if the user enters 2, it will display 2nd, if
-				the user enters 3, it will display 3rd, etc.
-			</p>
-		</div>
-
-		<br class="clear"/>
-
-    <div class="box">
-		 	<h4>Foobar</h4>
-			<p>
-			  This ruby program is an adaptation of a classic technical
-			  interview problem which displays sequences
-			  of the Foobar pattern.
-			</p>
-		</div>
-
-		<div class="box">
-<pre><code class="language-ruby">
 print &quot;How many items do you want to see? &quot;
 items = gets.chomp.to_i
 array = []
@@ -106,6 +68,48 @@ end
 array.each do |number|
   foobar(number)
 end</code></pre>
+		</div>
+
+		<div class="box">
+			<h4>Foobar</h4>
+			<p>
+				This ruby program is an adaptation of a classic 
+        technical interview problem which displays sequences
+        of the Foobar pattern.
+			</p>
+		</div>
+
+		<br class="clear"/>
+
+    <div class="box">
+		 	<h4>Fancy Button</h4>
+			<p>
+			  This Javascript snippet uses jQuery to create a 
+        button for smooth scrolling to return to the top 
+        of a page as well as fading to hide or show at 
+        specific points on the view. This is used for the 
+        button on this page.
+			</p>
+		</div>
+
+		<div class="box">
+<pre><code class="language-javascript">
+//Smooth scrolling for button to return to top
+$('#top').click(function() {
+  $('html, body').animate({ scrollTop: 0 }, 'slow');
+  return false;
+});
+
+//Fade button to return to top depending on scroll location
+$(window).scroll(function() {
+  const duration = 500;
+  if ($(this).scrollTop() > $('#about').offset().top) {
+    $('#top').fadeIn(duration);
+  } else {
+    $('#top').fadeOut(duration);
+  }
+});
+</code></pre>
 		</div>
 
     <div class="box">
