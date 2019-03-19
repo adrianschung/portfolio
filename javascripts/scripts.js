@@ -18,6 +18,7 @@ for (var i = 0; i < buttons.length; i++) {
       },
       'slow'
     );
+    return false;
   });
 }
 
@@ -25,4 +26,17 @@ for (var i = 0; i < buttons.length; i++) {
 $('#top').click(function() {
   $('html, body').animate({ scrollTop: 0 }, 'slow');
   return false;
+});
+
+//Hide button up on load
+$('#top').hide();
+
+//Fade button to return to top depending on scroll location
+$(window).scroll(function() {
+  const duration = 500;
+  if ($(this).scrollTop() > $('#about').offset().top) {
+    $('#top').fadeIn(duration);
+  } else {
+    $('#top').fadeOut(duration);
+  }
 });
