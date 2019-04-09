@@ -1,55 +1,85 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<link href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i" rel="stylesheet">
-    <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="images/favicon-16x16.png">
-    <link rel="stylesheet" type = "text/css" href = "css/normalize.css">
-		<link rel="stylesheet" type = "text/css" href = "css/style.css">
+  <head>
+    <link
+      href="https://fonts.googleapis.com/css?family=Raleway:400,400i,500,500i,700,700i"
+      rel="stylesheet"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="images/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="images/favicon-16x16.png"
+    />
+    <link rel="stylesheet" type="text/css" href="css/normalize.css" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
     <link href="css/prism.css" rel="stylesheet" />
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
     <script src="javascripts/prism.js"></script>
     <script src="javascripts/jquery.min.js"></script>
     <script src="https://unpkg.com/scrollreveal"></script>
 
-		<title>Adrian Chung</title>
-		<meta name="description" content="Adrian Chung is a professional
-        	software engineer specializing in full-stack development.
-       		He has extensive experience with Ruby, Rails, JavaScript,
-        	and building web applications.">
-	</head>
+    <title>Adrian Chung</title>
+    <meta
+      name="description"
+      content="Adrian Chung is a professional
+          software engineer specializing in full-stack development.
+          He has extensive experience with Ruby, Rails, JavaScript,
+          and building web applications."
+    />
+  </head>
 
-	<body>
-		<div class="about-container">
-			<ul class="navbar">
-			  <li><a href="#about" class="nav-link" id="about-btn">About</a></li>
-			  <li><a href="#code" class="nav-link" id="code-btn">Code Samples</a></li>
-			  <li><a href="#apps" class="nav-link" id="apps-btn">Web Apps</a></li>
-			  <li><a href="#skills" class="nav-link" id="skills-btn">Skills &amp; Tools</a></li>
-			  <li class="hire-me"><a href="#hire-me" class="nav-link" id="hire-btn">HIRE ME</a></li>
-			</ul>
+  <body>
+    <div class="about-container">
+      <ul class="navbar">
+        <li><a href="#about" class="nav-link" id="about-btn">About</a></li>
+        <li><a href="#code" class="nav-link" id="code-btn">Code Samples</a></li>
+        <li><a href="#apps" class="nav-link" id="apps-btn">Web Apps</a></li>
+        <li>
+          <a href="#skills" class="nav-link" id="skills-btn"
+            >Skills &amp; Tools</a
+          >
+        </li>
+        <li class="hire-me">
+          <a href="#hire-me" class="nav-link" id="hire-btn">HIRE ME</a>
+        </li>
+      </ul>
 
-			<div class="about" id="about">
-				<img src="images/me.jpg" class="me" />
+      <div class="about" id="about">
+        <img src="images/me.jpg" class="me" />
 
-				<h1>Adrian Chung</h1>
-				
-				<h2>Web Developer</h2>
-				
-				<hr class="grey"/>
-				
-				<p class="bio">
-					I am a full stack web developer with experience primarily in Ruby on Rails and Javascript. As a Science graduate, learning the hows and whys of life brings me great joy. After coming across programming, I've opened a door to a whole new world in which I can not only learn but produce my own logic. Solving problems and being able to understand all the inner-workings brings me the greatest source of gratification. Currently, I am looking for a position where I can face greater challenges that will help me grow and become a better developer.
-				</p>
-			</div>
-		</div>
-		
-		<h3 id="code">Code Snippets</h3>
-		
-		<hr class="yellow">
-		<br class="clear"/>
-		<div class="box">
-<pre><code class="language-ruby">
+        <h1>Adrian Chung</h1>
+
+        <h2>Web Developer</h2>
+
+        <hr class="grey" />
+
+        <p class="bio">
+          I am a full stack web developer with experience primarily in Ruby on
+          Rails and Javascript. As a Science graduate, learning the hows and
+          whys of life brings me great joy. After coming across programming,
+          I've opened a door to a whole new world in which I can not only learn
+          but produce my own logic. Solving problems and being able to
+          understand all the inner-workings brings me the greatest source of
+          gratification. Currently, I am looking for a position where I can face
+          greater challenges that will help me grow and become a better
+          developer.
+        </p>
+      </div>
+    </div>
+
+    <h3 id="code">Code Snippets</h3>
+
+    <hr class="yellow" />
+    <br class="clear" />
+    <div class="box">
+      <pre><code class="language-ruby">
 print &quot;How many items do you want to see? &quot;
 items = gets.chomp.to_i
 array = []
@@ -70,32 +100,30 @@ end
 array.each do |number|
   foobar(number)
 end</code></pre>
-		</div>
-
-		<div class="box">
-			<h4>Foobar</h4>
-			<p>
-				This ruby program is an adaptation of a classic 
-        technical interview problem which displays sequences
-        of the Foobar pattern.
-			</p>
-		</div>
-
-		<br class="clear"/>
+    </div>
 
     <div class="box">
-		 	<h4>Fancy Button</h4>
-			<p>
-			  This Javascript snippet uses jQuery to create a 
-        button for smooth scrolling to return to the top 
-        of a page as well as fading to hide or show at 
-        specific points on the view. This is used for the 
-        button on this page.
-			</p>
-		</div>
+      <h4>Foobar</h4>
+      <p>
+        This ruby program is an adaptation of a classic technical interview
+        problem which displays sequences of the Foobar pattern.
+      </p>
+    </div>
 
-		<div class="box">
-<pre><code class="language-javascript">
+    <br class="clear" />
+
+    <div class="box">
+      <h4>Fancy Button</h4>
+      <p>
+        This Javascript snippet uses jQuery to create a button for smooth
+        scrolling to return to the top of a page as well as fading to hide or
+        show at specific points on the view. This is used for the button on this
+        page.
+      </p>
+    </div>
+
+    <div class="box">
+      <pre><code class="language-javascript">
 //Smooth scrolling for button to return to top
 $('#top').click(function() {
   $('html, body').animate({ scrollTop: 0 }, 'slow');
@@ -112,7 +140,7 @@ $(window).scroll(function() {
   }
 });
 </code></pre>
-		</div>
+    </div>
 
     <div class="box">
       <pre><code class="language-ruby">
@@ -159,121 +187,152 @@ end</code></pre>
     <div class="box">
       <h4>Binary Tree Sort</h4>
       <p>
-        This ruby program will take an array of numbers as an argument for BTreeSort. Each element 
-        is sorted by insertion into the tree and then re-organized into a new array through a 
-        "flattening" of the tree.
+        This ruby program will take an array of numbers as an argument for
+        BTreeSort. Each element is sorted by insertion into the tree and then
+        re-organized into a new array through a "flattening" of the tree.
       </p>
     </div>
 
-		<br class="clear"/>
+    <br class="clear" />
 
-		<h3 id="apps">Web Apps</h3>
-		<hr class="yellow" />
+    <h3 id="apps">Web Apps</h3>
+    <hr class="yellow" />
 
-		<div class="box">
-    	<h4>Ironman Unlocks</h4>
-    	<img src="images/ironman-unlocks.jpg" class="full-width" />
-    	<p>
-       	An application for the popular MMORPG <a href="https://oldschool.runescape.com" target="_blank">OldSchool Runescape<a> 
-        built with HTML, CSS and Javascript. User selections are 
-        cached for return visits. It also includes a stat lookup
-        using Runescape's external API.
-        <a href="https://adrianschung.github.io/ironman-unlocks/" target="_blank">Website</a>
-        <a href="https://github.com/adrianschung/ironman-unlocks" target="_blank">GitHub</a>
-     	</p>
+    <div class="box">
+      <h4>Ironman Unlocks</h4>
+      <img src="images/ironman-unlocks.jpg" class="full-width" />
+      <p>
+        An application for the popular MMORPG
+        <a href="https://oldschool.runescape.com" target="_blank" style=""
+          >OldSchool Runescape</a
+        >
+        built with HTML, CSS and Javascript. User selections are cached for
+        return visits. It also includes a stat lookup using Runescape's external
+        API.
+        <a
+          href="https://adrianschung.github.io/ironman-unlocks/"
+          target="_blank"
+          >Website</a
+        >
+        <a
+          href="https://github.com/adrianschung/ironman-unlocks"
+          target="_blank"
+          >GitHub</a
+        >
+      </p>
     </div>
     <div class="box">
-   	<h4>Yelp Clone</h4>
-    	<img src="images/skatester.png" class="full-width" />
-    	<p>
-       	A Yelp clone that integrates with the Google Maps API
-       	and includes features like user comments, star ratings,
-       	image uploading, and user authentication.
-        <a href="https://skatester-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-        <a href="https://github.com/adrianschung/skatester" target="_blank">GitHub</a>
+      <h4>Yelp Clone</h4>
+      <img src="images/skatester.png" class="full-width" />
+      <p>
+        A Yelp clone that integrates with the Google Maps API and includes
+        features like user comments, star ratings, image uploading, and user
+        authentication.
+        <a href="https://skatester-adrian-chung.herokuapp.com/" target="_blank"
+          >Website</a
+        >
+        <a href="https://github.com/adrianschung/skatester" target="_blank"
+          >GitHub</a
+        >
       </p>
-  	</div>
-  	<br class="clear" />
+    </div>
+    <br class="clear" />
 
-  	<div class="box">
+    <div class="box">
       <h4>Two-Sided Market Place</h4>
-   		<img src="images/flixter.png" class="full-width" />
-    	<p>
-        A two-sided, video-streaming marketplace platform that
-      	features credit card payment capabilities, user role
-      	management, complex user interfaces, and advanced
-      	database relationships.
-        <a href="https://flixter-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-        <a href="https://github.com/adrianschung/flixter" target="_blank">GitHub</a>
-    	</p>
-  	</div>
-  	<div class="box">
-    	<h4>Test Driven Development</h4>
-    	<img src="images/grammable.png" class="full-width" />
-    	<p>
-      	An Instagram clone that was built using industry-standard, test-driven
-      	development following numerous red/green/refactor cycles.
-        <a href="https://grammable-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-        <a href="https://github.com/adrianschung/grammable" target="_blank">GitHub</a>
-    	</p>
-  	</div>
-  	<br class="clear" />
-  	<div class="box">
-    	<h4>Single Page Todo Application</h4>
-    	<img src="images/todoster.png" class="full-width" />
-    	<p>
-      	This single-page to-do application features a
-      	fluid user interface that by using JavaScript
-      	allows users to rapidly add dynamic content.
-        <a href="https://todoster-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-        <a href="https://github.com/adrianschung/todo" target="_blank">GitHub</a>
-    	</p>
-  	</div>
-  	<div class="box">
-    	<h4>Agile Team Project(Work In Progress)</h4>
-    	<img src="images/chess.png" class="full-width" />
-    	<p>
-      	Worked on an Agile software development team building
-      	a chess application. Under the guidance of a senior software engineer,
-      	we had weekly Agile team meetings for code reviews, sprint planning,
-      	and feature assignments.
-        <a href="https://chess-adrian-chung.herokuapp.com/" target="_blank">Website</a>
-        <a href="https://github.com/chess-senders/chess" target="_blank">GitHub</a>
-    	</p>
-  	</div>
-  	<br class="clear" />
-  	
-  	<h3 id="skills">Skills &amp; Tools</h3>
-  	<hr class="yellow" />
-  	<p class="skills-and-tools" />
-  	<p>
-  		Adrian has developed proficiency and expertise in the following programming languages and comfort with the following tools.
-  	</p>
-  	<div class ="icons">
-    	<img src="images/rubocop.png" class="icon"/>
-	    <img src="images/trello.png" class="icon"/>
-	    <img src="images/slack.png" class="icon"/>
-	    <img src="images/codeship.png" class="icon"/>
-	    <br class="clear" class="icon"/>
-    	<img src="images/skills.png" class="icon"/>
+      <img src="images/flixter.png" class="full-width" />
+      <p>
+        A two-sided, video-streaming marketplace platform that features credit
+        card payment capabilities, user role management, complex user
+        interfaces, and advanced database relationships.
+        <a href="https://flixter-adrian-chung.herokuapp.com/" target="_blank"
+          >Website</a
+        >
+        <a href="https://github.com/adrianschung/flixter" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </div>
+    <div class="box">
+      <h4>Test Driven Development</h4>
+      <img src="images/grammable.png" class="full-width" />
+      <p>
+        An Instagram clone that was built using industry-standard, test-driven
+        development following numerous red/green/refactor cycles.
+        <a href="https://grammable-adrian-chung.herokuapp.com/" target="_blank"
+          >Website</a
+        >
+        <a href="https://github.com/adrianschung/grammable" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </div>
+    <br class="clear" />
+    <div class="box">
+      <h4>Single Page Todo Application</h4>
+      <img src="images/todoster.png" class="full-width" />
+      <p>
+        This single-page to-do application features a fluid user interface that
+        by using JavaScript allows users to rapidly add dynamic content.
+        <a href="https://todoster-adrian-chung.herokuapp.com/" target="_blank"
+          >Website</a
+        >
+        <a href="https://github.com/adrianschung/todo" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </div>
+    <div class="box">
+      <h4>Agile Team Project(Work In Progress)</h4>
+      <img src="images/chess.png" class="full-width" />
+      <p>
+        Worked on an Agile software development team building a chess
+        application. Under the guidance of a senior software engineer, we had
+        weekly Agile team meetings for code reviews, sprint planning, and
+        feature assignments.
+        <a href="https://chess-adrian-chung.herokuapp.com/" target="_blank"
+          >Website</a
+        >
+        <a href="https://github.com/chess-senders/chess" target="_blank"
+          >GitHub</a
+        >
+      </p>
+    </div>
+    <br class="clear" />
+
+    <h3 id="skills">Skills &amp; Tools</h3>
+    <hr class="yellow" />
+    <p class="skills-and-tools" />
+    <p>
+      Adrian has developed proficiency and expertise in the following
+      programming languages and comfort with the following tools.
+    </p>
+    <div class="icons">
+      <img src="images/rubocop.png" class="icon" />
+      <img src="images/trello.png" class="icon" />
+      <img src="images/slack.png" class="icon" />
+      <img src="images/codeship.png" class="icon" />
+      <br class="clear" class="icon" />
+      <img src="images/skills.png" class="icon" />
     </div>
 
     <div class="contact-me" id="hire">
-    	<h3 class="contact-headline">Contact</h3>
-    	<hr class="yellow" />
-    	<p class="contact-info">
-      	Currently entertaining new opportunities.
-      	Please get in touch via email:
-    	</p>
-    	<p>
-        <a href="mailto:adrianschung@gmail.com" class="contact-link">adrianschung@gmail.com</a>
+      <h3 class="contact-headline">Contact</h3>
+      <hr class="yellow" />
+      <p class="contact-info">
+        Currently entertaining new opportunities. Please get in touch via email:
       </p>
-  	</div>
+      <p>
+        <a href="mailto:adrianschung@gmail.com" class="contact-link"
+          >adrianschung@gmail.com</a
+        >
+      </p>
+    </div>
     <div class="btn-up" id="top">
-    <a href="#">
-      <span class="top"></span>
-    </a>
+      <a href="#">
+        <span class="top"></span>
+      </a>
     </div>
     <script src="javascripts/scripts.js"></script>
-	</body>
+  </body>
 </html>
