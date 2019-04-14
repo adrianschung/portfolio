@@ -82,24 +82,19 @@
       <pre><code class="language-ruby">
 print &quot;How many items do you want to see? &quot;
 items = gets.chomp.to_i
-array = []
-items.times do |n|
-  array &lt;&lt; n + 1
-end
 def foobar(number)
-  if number % 3 == 0 &amp;&amp; number % 5 == 0
+  for x in 1..number
+  if x % 3 == 0 &amp;&amp; x % 5 == 0
     puts &quot;FooBar&quot;
-  elsif number % 5 == 0
+  elsif x % 5 == 0
     puts &quot;Bar&quot;
-  elsif number % 3 == 0
+  elsif x % 3 == 0
     puts &quot;Foo&quot;
   else
-    puts number
+    puts x
   end 
 end
-array.each do |number|
-  foobar(number)
-end</code></pre>
+foobar(items)</code></pre>
     </div>
 
     <div class="box">
