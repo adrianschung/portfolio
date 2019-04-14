@@ -10,23 +10,39 @@ h1 {
 	font-weight: normal;
 	margin-bottom: 0;
 }
+
 h2 {
 	color: white;
 	font-size: 18px;
 	margin-top: 0;
 }
 
-.bio {
-	color: white;
-	font-size: 14px;
+h3 {
+	text-align: center;
+	font-size: 28px;
+	font-weight: normal;
+	margin-top: 100px;
 }
 
-.me {
-	height: 150px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: #0f8284;
-	margin-top: 40px;
+h4 {
+	text-align: center;
+	font-size: 24px;
+}
+
+li {
+	display: inline-block;
+	font-size: 12px;
+	width: 100px;
+	font-weight: bold;
+	margin-top: 30px;
+	padding-top: 8px;
+	padding-bottom: 8px;
+	text-align: center;
+	margin-left: 30px;
+}
+
+p {
+	text-align: center;
 }
 
 .about {
@@ -34,13 +50,6 @@ h2 {
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-
-.grey {
-	height: 3px;
-	background-color: #767a82;
-	border: none;
-	width: 50px;
 }
 
 .about-container {
@@ -52,18 +61,9 @@ h2 {
 	padding-bottom: 5px;
 }
 
-h3 {
-	text-align: center;
-	font-size: 28px;
-	font-weight: normal;
-	margin-top: 100px;
-}
-
-.yellow {
-	border-top: 3px double #f5a623;
-	width: 250px;
-	border-bottom: none;
-	border-right: none;
+.bio {
+	color: white;
+	font-size: 14px;
 }
 
 .box {
@@ -75,38 +75,6 @@ h3 {
 
 .clear {
 	clear: both;
-}
-
-h4 {
-	text-align: center;
-	font-size: 24px;
-}
-
-p {
-	text-align: center;
-}
-
-.full-width {
-	width: 100%;
-}
-
-.skills-and-tools {
-	max-width: 400px;
-	margin: 40px auto;
-}
-
-.icons {
-	text-align: center;
-}
-
-.icon {
-	margin: 30px 0;
-}
-
-.contact-me {
-	height: 350px;
-	background-color: #202020;
-	padding-top: 30px;
 }
 
 .contact-headline {
@@ -125,24 +93,57 @@ p {
 	font-size: 13px;
 }
 
-.nav-link {
-	color: white;
-	text-decoration: none;
+.contact-me {
+	height: 350px;
+	background-color: #202020;
+	padding-top: 30px;
 }
 
-li {
-	display: inline-block;
-	font-size: 12px;
-	width: 100px;
-	font-weight: bold;
-	margin-top: 30px;
-	padding-top: 8px;
-	padding-bottom: 8px;
-	text-align: center;
-	margin-left: 30px;
+.full-width {
+	width: 100%;
+}
+
+.grey {
+	height: 3px;
+	background-color: #767a82;
+	border: none;
+	width: 50px;
 }
 
 .hire-me {
 	border-style: solid;
 	border-color: white;
+}
+
+.icon {
+	margin: 30px 0;
+}
+
+.icons {
+	text-align: center;
+}
+
+.me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: #0f8284;
+	margin-top: 40px;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+}
+
+.skills-and-tools {
+	max-width: 400px;
+	margin: 40px auto;
+}
+
+.yellow {
+	border-top: 3px double #f5a623;
+	width: 250px;
+	border-bottom: none;
+	border-right: none;
 }
