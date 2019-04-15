@@ -133,7 +133,15 @@ a:hover .right:after {
 }
 
 .full-width {
+	transition: transform 0.2s;
 	width: 100%;
+	box-sizing: border-box;
+}
+
+.full-width:hover {
+	border: 2px solid #f5a623;
+	transform: scale(1.05);
+	margin: -1px;
 }
 
 .grey {
@@ -172,6 +180,10 @@ a:hover .right:after {
 .skills-and-tools {
 	max-width: 400px;
 	margin: 40px auto;
+}
+
+.small {
+	width: 100%;
 }
 
 .top {
