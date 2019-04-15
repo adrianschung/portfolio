@@ -65,31 +65,11 @@ a:hover .right:after {
 	border-right: 0.5em solid #f5a623;
 }
 
-.bio {
-	color: white;
-	font-size: 14px;
-}
-
-.me {
-	height: 150px;
-	border-radius: 100%;
-	border-style: solid;
-	border-color: #0f8284;
-	margin-top: 40px;
-}
-
 .about {
 	width: 37.5rem;
 	margin-left: auto;
 	margin-right: auto;
 	text-align: center;
-}
-
-.grey {
-	height: 3px;
-	background-color: #767a82;
-	border: none;
-	width: 50px;
 }
 
 .about-container {
@@ -101,11 +81,9 @@ a:hover .right:after {
 	padding-bottom: 1.5rem;
 }
 
-.yellow {
-	border-top: 3px double #f5a623;
-	width: 250px;
-	border-bottom: none;
-	border-right: none;
+.bio {
+	color: white;
+	font-size: 14px;
 }
 
 .box {
@@ -116,32 +94,19 @@ a:hover .right:after {
 	visibility: hidden;
 }
 
+.btn-up {
+	text-align: center;
+	padding: 0;
+	display: inline-block;
+	vertical-align: middle;
+	position: sticky;
+	float: right;
+	bottom: 6em;
+	margin: 0 6em 0;
+}
+
 .clear {
 	clear: both;
-}
-
-.full-width {
-	width: 100%;
-}
-
-.skills-and-tools {
-	max-width: 400px;
-	margin: 40px auto;
-}
-
-.icons {
-	text-align: center;
-}
-
-.icon {
-	margin: 30px 0;
-}
-
-.contact-me {
-	margin-bottom: -6em;
-	height: 350px;
-	background-color: #202020;
-	padding-top: 30px;
 }
 
 .contact-headline {
@@ -160,9 +125,22 @@ a:hover .right:after {
 	font-size: 13px;
 }
 
-.nav-link {
-	color: white;
-	text-decoration: none;
+.contact-me {
+	margin-bottom: -6em;
+	height: 350px;
+	background-color: #202020;
+	padding-top: 30px;
+}
+
+.full-width {
+	width: 100%;
+}
+
+.grey {
+	height: 3px;
+	background-color: #767a82;
+	border: none;
+	width: 50px;
 }
 
 .hire-me {
@@ -170,15 +148,30 @@ a:hover .right:after {
 	border-color: white;
 }
 
-.btn-up {
+.icon {
+	margin: 30px 0;
+}
+
+.icons {
 	text-align: center;
-	padding: 0;
-	display: inline-block;
-	vertical-align: middle;
-	position: sticky;
-	float: right;
-	bottom: 6em;
-	margin: 0 6em 0;
+}
+
+.me {
+	height: 150px;
+	border-radius: 100%;
+	border-style: solid;
+	border-color: #0f8284;
+	margin-top: 40px;
+}
+
+.nav-link {
+	color: white;
+	text-decoration: none;
+}
+
+.skills-and-tools {
+	max-width: 400px;
+	margin: 40px auto;
 }
 
 .top {
@@ -201,6 +194,13 @@ a:hover .right:after {
 	-moz-transform: rotate(-45deg);
 	-webkit-transform: rotate(-45deg);
 	transform: rotate(-45deg);
+}
+
+.yellow {
+	border-top: 3px double #f5a623;
+	width: 250px;
+	border-bottom: none;
+	border-right: none;
 }
 
 #top {
