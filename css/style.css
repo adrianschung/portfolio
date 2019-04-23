@@ -1,5 +1,7 @@
 body {
 	font-family: 'Raleway', sans-serif;
+	font-size: 12px;
+	font-weight: normal;
 	margin: 0;
 	height: 100%;
 }
@@ -37,7 +39,6 @@ li {
 	display: inline-block;
 	font-size: 12px;
 	width: 100px;
-	font-weight: bold;
 	margin-top: 1rem;
 	padding-top: 1rem;
 	padding-bottom: 1rem;
