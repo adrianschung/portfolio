@@ -80,35 +80,37 @@
     <br class="clear" />
     <div class="box">
       <pre><code class="language-ruby">
-print &quot;How many items do you want to see? &quot;
-items = gets.chomp.to_i
-def foobar(number)
-  for x in 1..number
-  if x % 3 == 0 &amp;&amp; x % 5 == 0
-    puts &quot;FooBar&quot;
-  elsif x % 5 == 0
-    puts &quot;Bar&quot;
-  elsif x % 3 == 0
-    puts &quot;Foo&quot;
-  else
-    puts x
-  end 
+class Tree
+  attr_accessor :x, :l, :r
+  
+  def initialize(x, l=nil ,r=nil)
+    @x = x
+    @l = l
+    @r = r
+  end
 end
-foobar(items)</code></pre>
+
+def solution(t)
+  return 0 unless t
+  left = solution(t.l)
+  right = solution(t.r)
+
+  left &gt; right ? left + 1 : right + 1
+end</code></pre>
     </div>
 
     <div class="box">
-      <h4>Foobar</h4>
+      <h4>Binary Tree Height</h4>
       <p>
-        This ruby program is an adaptation of a classic technical interview
-        problem which displays sequences of the Foobar pattern.
+        This ruby program returns the deepest node in a binary tree
+        and returns the height once found
       </p>
     </div>
 
     <br class="clear" />
 
     <div class="box">
-      <h4>Fancy Button</h4>
+      <h4>Scroll Up Button</h4>
       <p>
         This Javascript snippet uses jQuery to create a button for smooth
         scrolling to return to the top of a page as well as fading to hide or
